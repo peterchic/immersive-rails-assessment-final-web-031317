@@ -1,0 +1,9 @@
+<h1>Edit Page</h1>
+
+
+<h3>Chnage your rating</h3>
+<%= form_for @appearance do |f| %>
+  <%= f.label :rating %>
+  <%= f.number_field :rating, in: (1..5) %>
+  <%= f.submit "Update Rating" %>
+<% end %>
